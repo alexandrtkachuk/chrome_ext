@@ -1,0 +1,12 @@
+{
+    "require": {
+        "guzzlehttp/guzzle": "~6.0",
+        "symfony/css-selector": "*",
+        "symfony/dom-crawler": "*",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {"EasyPars\\": "src/"}
+    }
+
+}

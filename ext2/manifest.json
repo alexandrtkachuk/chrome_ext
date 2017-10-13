@@ -9,10 +9,23 @@
     "default_icon": "icon.png",
     "default_popup": "popup.html"
   },
+
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["jquery.js", "mycode.js"]
+    }
+  ],
   "permissions": [
     "activeTab",
     "storage",
-    "http://192.168.56.100/"
-  ],
+    "http://192.168.56.100/",
+    "http://localhost:8000/",
+    "https://github.com/blog",
+    "http://*/",
+    "https://*/*",
+    "http://*/*",
+    "tabs"
+  ]
 
 }
